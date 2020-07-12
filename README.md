@@ -22,7 +22,9 @@ Later publish an API for database and other kinds of integration
 
 ## Questions
 What are the easy wins? 
-iCn3D has many capabilities for displaying data, what can we use now?
+iCn3D has many capabilities for displaying data, what can we use now? That is have menu items call existing display types
+Area concepts: Surface displays, wire frames, water
+Chemical concepts: Display, colors ...
 
 ## Example data types
 Motion ranges and envelops from molecular simulations / molecular dynamics
