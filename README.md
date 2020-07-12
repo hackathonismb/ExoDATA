@@ -9,12 +9,12 @@ Residue (and atom) level properties are calculated by numerous programs.  The go
 * Annotations need to be defined interms of structure
 
 * Basic Annotation
-** Amino acid residue number
-** Data value 
-** Description
+   * Amino acid residue number
+   * Data value 
+   * Description
 * Data Value
-** Vectors, arrays, hashes (key, value)
-** Example: radii, gradients
+   * Vectors, arrays, hashes (key, value)
+   * Example: radii, gradients
 
 # Simple model
 Define a file format (perhaps JSON) and iCn3D parser to interconvert external data to iCn3D data
