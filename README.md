@@ -18,7 +18,7 @@ Residue (and atom) level properties are calculated by numerous programs.  The go
 
 # Simple model
 Define a file format (perhaps JSON) and iCn3D parser to interconvert external data to iCn3D data
-Later publish an API for database and other kinds of integration
+Later publish an API for database and other kinds of integration such as Jupyter notebooks
 
 ## Questions
 What are the easy wins? 
