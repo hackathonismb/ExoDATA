@@ -1,0 +1,109 @@
+load mmdb 2crk
+pickatom 968
+style sidec ball and stick
+color 0FF
+pickatom 974
+style sidec ball and stick
+color 0FF
+pickatom 1045
+style sidec ball and stick
+color 0FF
+pickatom 31
+style sidec ball and stick
+color 0FF
+pickatom 1058
+style sidec ball and stick
+color 0FF
+pickatom 1070
+style sidec ball and stick
+color 0FF
+pickatom 56
+style sidec ball and stick
+color 0FF
+pickatom 68
+style sidec ball and stick
+color 0FF
+pickatom 77
+style sidec ball and stick
+color 0FF
+pickatom 1115
+style sidec ball and stick
+color 0FF
+pickatom 145
+style sidec ball and stick
+color 0FF
+pickatom 151
+style sidec ball and stick
+color 0FF
+pickatom 1188
+style sidec ball and stick
+color 0FF
+pickatom 1205
+style sidec ball and stick
+color 0FF
+pickatom 209
+style sidec ball and stick
+color 0FF
+pickatom 275
+style sidec ball and stick
+color 0FF
+pickatom 2334
+style sidec ball and stick
+color 0FF
+pickatom 1293
+style sidec ball and stick
+color 0FF
+pickatom 1306
+style sidec ball and stick
+color 0FF
+pickatom 2374
+style sidec ball and stick
+color 0FF
+pickatom 2380
+style sidec ball and stick
+color 0FF
+pickatom 2406
+style sidec ball and stick
+color 0FF
+pickatom 1730
+style sidec ball and stick
+color 0FF
+pickatom 1739
+style sidec ball and stick
+color 0FF
+pickatom 750
+style sidec ball and stick
+color 0FF
+pickatom 766
+style sidec ball and stick
+color 0FF
+pickatom 781
+style sidec ball and stick
+color 0FF
+pickatom 800
+style sidec ball and stick
+color 0FF
+pickatom 809
+style sidec ball and stick
+color 0FF
+pickatom 2805
+style sidec ball and stick
+color 0FF
+pickatom 2831
+style sidec ball and stick
+color 0FF
+pickatom 1893
+style sidec ball and stick
+color 0FF
+pickatom 2853
+style sidec ball and stick
+color 0FF
+pickatom 875
+style sidec ball and stick
+color 0FF
+pickatom 941
+style sidec ball and stick
+color 0FF
+pickatom 2920
+style sidec ball and stick
+color 0FF
