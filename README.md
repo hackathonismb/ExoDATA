@@ -29,3 +29,14 @@ Chemical concepts: Display, colors ...
 ## Example data types
 Motion ranges and envelops from molecular simulations / molecular dynamics
 Annotations from chemical modification of exposed surfaces
+Volumetric data
+Elecron density data
+DSN6 files
+
+## ISMB Survey
+Goal: To learn what attendees would like to see, in terms, of visualizing data in the context of 3D structures. 
+Preamplbe Hackathon sentence, iCn3D, link to github page.
+
+###Questions: 
+* What data would you like to see layered on a 3D structural model?
+* Where do you get that data? Source type (files, program output, databases, servers), name?
