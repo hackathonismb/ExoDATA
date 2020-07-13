@@ -40,7 +40,7 @@ def index(request):
 
             try:
                 req = urllib.request.urlopen(url)
-                assert req.getcode()==20
+                assert req.getcode()==200
                 return HttpResponseRedirect(url)
             except:
                 # return render(request,"visualise/redirect_out.html",context)
