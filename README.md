@@ -4,7 +4,7 @@
 ### Team: Giulia Babbi, Raul Cachau, Matthew Sinnott, Todd Smith, Francesco Tabaro
 
 # Motivation
-In DNA and proteins, residue (and atom) level properties are calculated by numerous programs. From chemical modifications to simulation and molecural dynamics calucations thier are many kinds of data, that when visualized in the context of three dimensional (3D) molecular structures can provide insights to develop new knowlege. Presently, iCn3D displays structures from data in PDB or MMDB files. It's accompaning 1D sequence views can display annotations from other databases, but external data cannot be added in a flexible mannor. 
+In DNA and proteins, residue (and atom) level properties are calculated by numerous programs. From chemical modifications to volumetric data, to electon densities, to simulation and molecular dynamics calucations thier are many kinds of data, that when visualized in the context of three dimensional (3D) molecular structures can provide insights to develop new knowlege. Presently, iCn3D displays structures from data in PDB or MMDB files. It's accompaning 1D sequence views can display annotations from other databases, but external data cannot be added in a flexible mannor. 
 
 The goal of this project is to develop capabilities in iCn3D to be able to import externally computed residue (and atom) annotation (properties) from other sources and experiments and visualize and share those annotations with structures and for additional analysis. In one example an individual should be able to compare, combine and correlate multiple properties computed by multiple programs, to open the door to deep and rich structure-properties analysis at various levels of detail.
 
@@ -47,9 +47,8 @@ In addition to the database of curated information, IEDB provides several epitop
 ### Data Structure
 Varied due the program used. All produce information of an aa range and sequence and distinguish linear from discontinuous epitopes.
 
-## ISMB Survey
-Goal: To learn what attendees would like to see, in terms, of visualizing data in the context of 3D structures. 
-Preamble: ISMB attendees we ned your help. We are participating in hackathon to improve iCn3D. One of the poject is to [view external data](https://github.com/hackathonismb/Integration-of-externally-computed-DATA-for-visualization-and-analysis-on-structure) such as chemical modifications, molecualr dynamics information, and quality information as annotations on 3D molecular structures. To help up we have a very short survey we'd like you to take a less than one minute survey. 
+## Other Examples
+DSN6 files
 
 # Requiements
 * Import and view external annoation data in iCn3D
@@ -68,6 +67,7 @@ Preamble: ISMB attendees we ned your help. We are participating in hackathon to 
 # Approach
 Define a file format (perhaps JSON) and iCn3D parser to interconvert external data to iCn3D data
 Later publish an API for database and other kinds of integration such as Jupyter notebooks
+Survey ISMB attendees for more examples 
 
 ## Questions
 What are the easy wins? 
@@ -75,12 +75,13 @@ iCn3D has many capabilities for displaying data, what can we use now? That is ha
 Area concepts: Surface displays, wire frames, water
 Chemical concepts: Display, colors ...
 
-## Example data types
-Motion ranges and envelops from molecular simulations / molecular dynamics
-Annotations from chemical modification of exposed surfaces
-Volumetric data
-Elecron density data
-DSN6 files
+## ISMB Survey
+Goal: To learn what attendees would like to see, in terms, of visualizing data in the context of 3D structures. 
+Preamble: ISMB attendees we ned your help! We are participating in an iCn3D hackathon. One project is to enable viewing of external data such as chemical modifications, molecular dynamics, and quality information as annotations on 3D molecular structures. To better address community needs we ask that you take less than one minute to fill out our survey.
+Questions:
+1. What kind data would you like to see on a 3D structure?
+1. How do you work with the data in question one? (file, program output, database, website (server))
+1. What is the name of the program or resource in question 2?
 
 # References
 1. Schmidt, C., Macpherson, J.A., Lau, A.M., Tan, K.W., Fraternali, F., and Politis, A. (2017). Surface Accessibility and Dynamics of Macromolecular Assemblies Probed by Covalent Labeling Mass Spectrometry and Integrative Modeling. Anal. Chem. 89, 1459–1468.
