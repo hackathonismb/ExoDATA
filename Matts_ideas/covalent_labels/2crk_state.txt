@@ -1,109 +1,109 @@
 load mmdb 2crk
-pickatom 968
+select .A:242
 style sidec ball and stick
 color 0FF
-pickatom 974
+select .A:11
 style sidec ball and stick
 color 0FF
-pickatom 1045
+select .A:170
 style sidec ball and stick
 color 0FF
-pickatom 31
+select .A:369
 style sidec ball and stick
 color 0FF
-pickatom 1058
+select .A:307
 style sidec ball and stick
 color 0FF
-pickatom 1070
+select .A:172
 style sidec ball and stick
 color 0FF
-pickatom 56
+select .A:366
 style sidec ball and stick
 color 0FF
-pickatom 68
+select .A:103
 style sidec ball and stick
 color 0FF
-pickatom 77
+select .A:25
 style sidec ball and stick
 color 0FF
-pickatom 1115
+select .A:15
 style sidec ball and stick
 color 0FF
-pickatom 145
+select .A:40
 style sidec ball and stick
 color 0FF
-pickatom 151
+select .A:156
 style sidec ball and stick
 color 0FF
-pickatom 1188
+select .A:158
 style sidec ball and stick
 color 0FF
-pickatom 1205
+select .A:24
 style sidec ball and stick
 color 0FF
-pickatom 209
+select .A:14
 style sidec ball and stick
 color 0FF
-pickatom 275
+select .A:224
 style sidec ball and stick
 color 0FF
-pickatom 2334
+select .A:372
 style sidec ball and stick
 color 0FF
-pickatom 1293
+select .A:116
 style sidec ball and stick
 color 0FF
-pickatom 1306
+select .A:303
 style sidec ball and stick
 color 0FF
-pickatom 2374
+select .A:129
 style sidec ball and stick
 color 0FF
-pickatom 2380
+select .A:16
 style sidec ball and stick
 color 0FF
-pickatom 2406
+select .A:105
 style sidec ball and stick
 color 0FF
-pickatom 1730
+select .A:223
 style sidec ball and stick
 color 0FF
-pickatom 1739
+select .A:138
 style sidec ball and stick
 color 0FF
-pickatom 750
+select .A:108
 style sidec ball and stick
 color 0FF
-pickatom 766
+select .A:128
 style sidec ball and stick
 color 0FF
-pickatom 781
+select .A:141
 style sidec ball and stick
 color 0FF
-pickatom 800
+select .A:304
 style sidec ball and stick
 color 0FF
-pickatom 809
+select .A:107
 style sidec ball and stick
 color 0FF
-pickatom 2805
+select .A:381
 style sidec ball and stick
 color 0FF
-pickatom 2831
+select .A:125
 style sidec ball and stick
 color 0FF
-pickatom 1893
+select .A:298
 style sidec ball and stick
 color 0FF
-pickatom 2853
+select .A:147
 style sidec ball and stick
 color 0FF
-pickatom 875
+select .A:140
 style sidec ball and stick
 color 0FF
-pickatom 941
+select .A:101
 style sidec ball and stick
 color 0FF
-pickatom 2920
+select .A:32
 style sidec ball and stick
 color 0FF
