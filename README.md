@@ -33,12 +33,23 @@ aa3; type3; marker3
 
 Data are structured as above, aa indicates a residue identifier, type refers to the residue type. The marker is theindication of protection of that residue. For folding experiments this marker will be EARLY, INTERMEDIATEor LATE, for stability experiments this will be STRONG, MEDIUM or WEAK
 
-# Discrete Optimised Protein Energy (DOPE) Score
+## Discrete Optimised Protein Energy (DOPE) Score
 DOPE, or Discrete Optimized Protein Energy  (Shen and Sali, 2006), is a statistical potential used to assesshomology   models   in   protein   structure   prediction.   DOPE   is   based   on   an   improved   reference   state   thatcorresponds to noninteracting atoms in a homogeneous sphere with the radius dependent on a sample nativestructure; it thus accounts for the finite and spherical shape of the native structures.
 
-## Calculation
+### Calculation
 DOPE scores are calculated using MODELLER9.24.
 
+## Epitope from the Immune Epitope Database (IEDB)
+From http://www.iedb.org "The Immune Epitope Database (IEDB) is a freely available resource funded by NIAID. It catalogs experimental data on antibody and T cell epitopes studied in humans, non-human primates, and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation. The IEDB also hosts tools to assist in the prediction and analysis of epitopes." As of July 5, 2020 the database holds information on 738,235 peptidic, 2,980 non-peptidic epitopes, over a million T Cell, B Cell and MHC ligand assays, 3,939 source organisms, and 829 restricting MHC Alleles from 21,290 references. In this rich resource, epitopes from proteins with known structures (~4500) are linked to the relevant PDB files and can be displayed in 2D "response frequency" maps. 
+
+In addition to the database of curated information, IEDB provides several epitope prediction tools for both T cell receptors and B cell receptors. In most cases data (epitopes) returned by theses tools are displayed in tables and 2D represtentations. For predictions with known structures, IEDB does provide a 3D viewing capability with jmol. 
+
+### Data Structure
+Varied due the program used. All produce information of an aa range and sequence and distinguish linear from discontinuous epitopes.
+
+## ISMB Survey
+Goal: To learn what attendees would like to see, in terms, of visualizing data in the context of 3D structures. 
+Preamble: ISMB attendees we ned your help. We are participating in hackathon to improve iCn3D. One of the poject is to [view external data](https://github.com/hackathonismb/Integration-of-externally-computed-DATA-for-visualization-and-analysis-on-structure) such as chemical modifications, molecualr dynamics information, and quality information as annotations on 3D molecular structures. To help up we have a very short survey we'd like you to take a less than one minute survey. 
 
 # Requiements
 * Import and view external annoation data in iCn3D
@@ -70,14 +81,6 @@ Annotations from chemical modification of exposed surfaces
 Volumetric data
 Elecron density data
 DSN6 files
-
-## ISMB Survey
-Goal: To learn what attendees would like to see, in terms, of visualizing data in the context of 3D structures. 
-Preamble: ISMB attendees we ned your help. We are participating in hackathon to improve iCn3D. One of the poject is to [view external data](https://github.com/hackathonismb/Integration-of-externally-computed-DATA-for-visualization-and-analysis-on-structure) such as chemical modifications, molecualr dynamics information, and quality information as annotations on 3D molecular structures. To help up we have a very short survey we'd like you to take a less than one minute survey. 
-
-### Questions: 
-* What data would you like to see layered on a 3D structural model?
-* Where do you get that data? Source type (files, program output, databases, servers), name?
 
 # References
 Schmidt, C., Macpherson, J.A., Lau, A.M., Tan, K.W., Fraternali, F., and Politis, A. (2017). Surface Accessibility and Dynamics of Macromolecular Assemblies Probed by Covalent Labeling Mass Spectrometry and Integrative Modeling. Anal. Chem. 89, 1459–1468.
