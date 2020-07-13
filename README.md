@@ -37,6 +37,6 @@ DSN6 files
 Goal: To learn what attendees would like to see, in terms, of visualizing data in the context of 3D structures. 
 Preamplbe Hackathon sentence, iCn3D, link to github page.
 
-###Questions: 
+### Questions: 
 * What data would you like to see layered on a 3D structural model?
 * Where do you get that data? Source type (files, program output, databases, servers), name?
