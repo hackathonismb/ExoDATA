@@ -35,7 +35,7 @@ DSN6 files
 
 ## ISMB Survey
 Goal: To learn what attendees would like to see, in terms, of visualizing data in the context of 3D structures. 
-Preamplbe Hackathon sentence, iCn3D, link to github page.
+Preamble: ISMB attendees we ned your help. We are participating in hackathon to improve iCn3D. One of the poject is to [view external data](https://github.com/hackathonismb/Integration-of-externally-computed-DATA-for-visualization-and-analysis-on-structure) such as chemical modifications, molecualr dynamics information, and quality information as annotations on 3D molecular structures. To help up we have a very short survey we'd like you to take a less than one minute survey. 
 
 ### Questions: 
 * What data would you like to see layered on a 3D structural model?
