@@ -86,5 +86,6 @@ Questions:
 # References
 1. Schmidt, C., Macpherson, J.A., Lau, A.M., Tan, K.W., Fraternali, F., and Politis, A. (2017). Surface Accessibility and Dynamics of Macromolecular Assemblies Probed by Covalent Labeling Mass Spectrometry and Integrative Modeling. Anal. Chem. 89, 1459–1468.
 1. Shen, M., and Sali, A. (2006). Statistical potential for assessment and prediction of protein structures. Protein Sci. 15, 2507–2524.
-1. Sinnott, M., Malhotra, S., Madhusudhan, M.S., Thalassinos, K., and Topf, M. (2020). Combining Information from Crosslinks and Monolinks in the Modeling of Protein Str
+1. Sinnott, M., Malhotra, S., Madhusudhan, M.S., Thalassinos, K., and Topf, M. (2020). Combining Information from Crosslinks and Monolinks in the Modeling of Protein Structure ()
+1. Wales, T.E., and Engen, J.R. (2006). Hydrogen exchange mass spectrometry for the analysis of protein dynamics. Mass Spectrom. Rev. 25, 158–170.
 
