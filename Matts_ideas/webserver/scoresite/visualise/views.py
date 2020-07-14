@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import PDBForm
-from .runVis import LoadModel, DOPE, HDXRepr, RepLabels
+from .runVis import LoadModel, DOPE, HDXRepr, RepLabels, CustomRes
 import urllib
 
 d_obj = {
     "1":RepLabels,
     "2":HDXRepr,
-    "3":DOPE
+    "3":DOPE,
+    "4":CustomRes
 }
 
 # Create your views here.
@@ -48,8 +49,12 @@ def index(request):
                 return HttpResponseRedirect(url)
             except:
                 # return render(request,"visualise/redirect_out.html",context)
-                return HttpResponse("#The output url was too long.\n#Please copy and paste the below text into a txt file and load into iCn3D as a state file.\n" + "\n".join(obj.state),content_type='text/plain')
-
+                # return HttpResponse("#The output url was too long.\n#Please copy and paste the below text into a txt file and load into iCn3D as a state file.\n" + "\n".join(obj.state),content_type='text/plain')
+                filename = "%s_state.txt" % input_data['PDB']
+                content = "\n".join(obj.state)
+                response = HttpResponse(content, content_type='text/plain')
+                response['Content-Disposition'] = 'attachment; filename={0}'.format(filename)
+                return response
             # if len(url) <= 2500:
             #     return HttpResponseRedirect(url)
             # else:

@@ -209,3 +209,42 @@ class DOPE(LoadModel):
             self.output(lines,state_pref, state_suff)
 
         self.state = lines
+
+class CustomRes(LoadModel):
+    def __init__(self,pdb_code,data_file):
+        super().__init__(pdb_code)
+        self.res_dict = self.get_res_score(data_file)
+
+    def get_res_score(self,data_file):
+        d_scores = {}
+
+        g = data_file.read().decode("utf-8").splitlines()
+        for line in g:
+            aa, c, score = line.split('|')
+
+            d_scores[(int(aa),c)] = float(score)
+
+        return d_scores
+
+    def output_statefile(self, data_label="", output_bool=True, state_pref="./",state_suff="_state.txt"):
+        lines = []
+
+        lines.append(f"load mmdb {self.pdb_code}")
+
+        lines.append("color silver")
+
+        minima = min(self.res_dict.values())
+        maxima = max(self.res_dict.values())
+        norm = matplotlib.colors.Normalize(vmin=minima, vmax=maxima, clip=True)
+        mapper = cm.ScalarMappable(norm=norm, cmap=cm.Reds_r)
+
+        res_colors = {k:matplotlib.colors.rgb2hex(mapper.to_rgba(v)) for k,v in self.res_dict.items()}
+
+        for k,v in res_colors.items():
+            lines.append(f"select .{k[1]}:{k[0]}")
+            lines.append(f"color {v[1:]}")
+
+        if output_bool:
+            self.output(lines,state_pref, state_suff)
+
+        self.state = lines

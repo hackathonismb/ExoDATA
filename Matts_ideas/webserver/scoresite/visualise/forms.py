@@ -1,9 +1,10 @@
 from django import forms
 
 CHOICES = [
-    ('1','Covalent Labelling'),
+    ('1','Residue Labelling'),
     ('2','Hydrogen Deuterium Exchange'),
-    ('3','DOPE Score')
+    ('3','DOPE Score'),
+    ('4','Custom Residue Score')
 ]
 
 HDX_CHOICES = [

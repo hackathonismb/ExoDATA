@@ -1,89 +1,11 @@
 load mmdb 2crk
-select .A:242
-style sidec ball and stick
-color 0FF
-select .A:11
-style sidec ball and stick
-color 0FF
-select .A:170
-style sidec ball and stick
-color 0FF
-select .A:369
-style sidec ball and stick
-color 0FF
-select .A:307
-style sidec ball and stick
-color 0FF
-select .A:172
-style sidec ball and stick
-color 0FF
-select .A:366
-style sidec ball and stick
-color 0FF
-select .A:103
-style sidec ball and stick
-color 0FF
-select .A:25
-style sidec ball and stick
-color 0FF
-select .A:15
-style sidec ball and stick
-color 0FF
-select .A:40
-style sidec ball and stick
-color 0FF
-select .A:156
+select .A:224
 style sidec ball and stick
 color 0FF
 select .A:158
 style sidec ball and stick
 color 0FF
-select .A:24
-style sidec ball and stick
-color 0FF
-select .A:14
-style sidec ball and stick
-color 0FF
-select .A:224
-style sidec ball and stick
-color 0FF
-select .A:372
-style sidec ball and stick
-color 0FF
-select .A:116
-style sidec ball and stick
-color 0FF
-select .A:303
-style sidec ball and stick
-color 0FF
-select .A:129
-style sidec ball and stick
-color 0FF
-select .A:16
-style sidec ball and stick
-color 0FF
-select .A:105
-style sidec ball and stick
-color 0FF
-select .A:223
-style sidec ball and stick
-color 0FF
-select .A:138
-style sidec ball and stick
-color 0FF
-select .A:108
-style sidec ball and stick
-color 0FF
-select .A:128
-style sidec ball and stick
-color 0FF
-select .A:141
-style sidec ball and stick
-color 0FF
-select .A:304
-style sidec ball and stick
-color 0FF
-select .A:107
+select .A:40
 style sidec ball and stick
 color 0FF
 select .A:381
@@ -92,18 +14,96 @@ color 0FF
 select .A:125
 style sidec ball and stick
 color 0FF
+select .A:138
+style sidec ball and stick
+color 0FF
+select .A:223
+style sidec ball and stick
+color 0FF
+select .A:128
+style sidec ball and stick
+color 0FF
+select .A:141
+style sidec ball and stick
+color 0FF
+select .A:108
+style sidec ball and stick
+color 0FF
+select .A:105
+style sidec ball and stick
+color 0FF
+select .A:16
+style sidec ball and stick
+color 0FF
 select .A:298
 style sidec ball and stick
 color 0FF
-select .A:147
-style sidec ball and stick
-color 0FF
-select .A:140
+select .A:170
 style sidec ball and stick
 color 0FF
 select .A:101
 style sidec ball and stick
 color 0FF
+select .A:147
+style sidec ball and stick
+color 0FF
+select .A:242
+style sidec ball and stick
+color 0FF
 select .A:32
+style sidec ball and stick
+color 0FF
+select .A:140
+style sidec ball and stick
+color 0FF
+select .A:15
+style sidec ball and stick
+color 0FF
+select .A:304
+style sidec ball and stick
+color 0FF
+select .A:366
+style sidec ball and stick
+color 0FF
+select .A:107
+style sidec ball and stick
+color 0FF
+select .A:156
+style sidec ball and stick
+color 0FF
+select .A:25
+style sidec ball and stick
+color 0FF
+select .A:307
+style sidec ball and stick
+color 0FF
+select .A:172
+style sidec ball and stick
+color 0FF
+select .A:103
+style sidec ball and stick
+color 0FF
+select .A:372
+style sidec ball and stick
+color 0FF
+select .A:116
+style sidec ball and stick
+color 0FF
+select .A:369
+style sidec ball and stick
+color 0FF
+select .A:303
+style sidec ball and stick
+color 0FF
+select .A:14
+style sidec ball and stick
+color 0FF
+select .A:11
+style sidec ball and stick
+color 0FF
+select .A:24
+style sidec ball and stick
+color 0FF
+select .A:129
 style sidec ball and stick
 color 0FF
