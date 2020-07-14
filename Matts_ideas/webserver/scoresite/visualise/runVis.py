@@ -52,7 +52,7 @@ class RepLabels(LoadModel):
         mls = set()
 
         # print(labels)
-        labels = labels.decode("utf-8")
+        labels = labels.read().decode("utf-8")
         for line in str(labels).splitlines():
             ml = line.split('|')
             mls.add((int(ml[0]),ml[1]))
@@ -97,7 +97,7 @@ class HDXRepr(LoadModel):
 
         # with open(hdx_file) as f:
         #     g = f.read().splitlines()
-        g = hdx_file.decode('utf-8')
+        g = hdx_file.read().decode('utf-8')
         for line in [i for i in g.splitlines() if not i.startswith("#")]:
             state = line.split(';')[-1].strip()
             aa = int(line.split(';')[0].strip())

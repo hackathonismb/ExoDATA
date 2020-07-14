@@ -27,7 +27,11 @@ def index(request):
 
             # if input_data["choice"]=="1":
                 # print(request.FILES['data'].read())
-            obj = d_obj[input_data["choice"]](input_data['PDB'],request.FILES['data'].read())
+
+            if 'data' not in request.FILES:
+                request.FILES['data']=None
+
+            obj = d_obj[input_data["choice"]](input_data['PDB'],request.FILES['data'])
             url = obj.open_url(open_link=False,print_out=True,data_label=input_data["hdx_opt"])
             # print(url)
 
@@ -44,7 +48,7 @@ def index(request):
                 return HttpResponseRedirect(url)
             except:
                 # return render(request,"visualise/redirect_out.html",context)
-                return HttpResponse("#The output url was too long.\n#Please save this txt file and load it into iCn3D as a statefile.\n" + "\n".join(obj.state),content_type='text/plain')
+                return HttpResponse("#The output url was too long.\n#Please copy and paste the below text into a txt file and load into iCn3D as a state file.\n" + "\n".join(obj.state),content_type='text/plain')
 
             # if len(url) <= 2500:
             #     return HttpResponseRedirect(url)
