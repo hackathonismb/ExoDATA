@@ -1,0 +1,19 @@
+{% extends "visualise/base.html" %}
+{% load static %}
+{% block page_content %}
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>ExoData</h1>
+    <p>Enter a PDB code, the type of experimental data you wish to visualise and the input data (if applicable).</p>
+    <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+      {{ form.as_p }}
+    <button type="submit">Submit</button>
+    </form>
+    <p></p>
+    <p>If a url can be opened then the submit should redirect you to an instance of iCn3D to visualise your data.</p>
+    <p>If the url cannot be accessed then a state file will be downloaded which you can load into iCn3D.</p>
+  </div>
+</div>
+
+{% endblock %}
