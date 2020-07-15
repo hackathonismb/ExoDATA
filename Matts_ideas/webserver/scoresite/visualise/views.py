@@ -39,7 +39,8 @@ def index(request):
             try:
                 req = urllib.request.urlopen(url)
                 assert req.getcode()==200
-                return HttpResponseRedirect(url)
+                req.close()
+                return render(request,"visualise/results.html",{'url':url})
             except:
                 filename = "%s_state.txt" % input_data['PDB']
                 content = "\n".join(obj.state)
@@ -51,3 +52,6 @@ def index(request):
 
 def help(request):
     return render(request,"visualise/help.html")
+
+def results(request,context):
+    return render(request,"visualise/results.html",{'url':''})
