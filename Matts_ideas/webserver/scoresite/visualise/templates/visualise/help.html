@@ -1,0 +1,77 @@
+{% extends "visualise/base.html" %}
+{% load static %}
+{% block page_content %}
+
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="{% static 'res_label.png' %}" alt="Card image cap" height="400">
+    <div class="card-body">
+      <h5 class="card-title">Residue Labelling and Custom Residue Score</h5>
+      <p class="card-text">The Residue labelling functionality will simply
+        colour residues differently to the rest of the structure and display it
+        as a ball and stick representation. Simply input a data file containing
+      amino acid and chain ids separated by bars as in the picture above.</p>
+      <p class="card-text">The Custom Residue Score allows you to colour residues
+      based on any property you want. Simply input a data file containing amino
+    acid IDs, chain IDs and your score separated by bars, as shown in the image
+    above.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static 'hdx_data.png' %}" alt="Card image cap" height="400">
+    <div class="card-body">
+      <h5 class="card-title">Hydrogen Deuterium Exchange (HDX) Data</h5>
+      <p class="card-text">This functionality uses the data structure from the
+         <a href="http://bio2byte.be/start2fold/">Start2Fold database</a>. By
+         measuring the rate of exchange of hydrogen and deuterium (using NMR or
+         Mass Spec) over a protein one can identify residues which are more
+         protected (i.e. buried) than others. This allows it to inform on
+         residue accessibility and dynamics (Wales and Engen, 2006). There are
+         two main variants of this experiment: folding and stability.</p>
+      <p class="card-text">
+        <ul>
+          <li><b>Folding</b>: The protons of the backbone amide of
+            amino acid residues exchange with protons of the solvent (water) at
+            neutral or acidic pH. If these amide protons are in residues that
+            are part of the folding nuclei of proteins, they become protected
+            from solvent at a very early stage during the folding process and
+            stop exchanging. These 'protection rates' of amide protons can be
+            detected by a range of methods that follow their solvent exchange
+            from the completely unfolded state throughout the entire folding
+            course: for example pulsed labelling, quenched flow and
+            competition-based HDX measurements (coupled with either NMR or MS)
+            as well as oxidative labelling experiments provide invaluable
+            information on the folding mechanisms of proteins.</li>
+            <li><b>Stability</b>: On the other hand, the native exchange
+              experiments investigate proteins in their folded or partially
+              folded states and report on the stability of existing hydrogen
+              bonds to the amide protons based on their resistance to solvent
+              exchange. By varying the environmental conditions, like pH or
+              denaturant concentrations, such measurements can also provide
+              quantitative information on the protection levels of the
+              individual amide protons in function of changes in the
+              conformation of the protein. Comparing these values can
+              distinguish more stable from less stable regions of the
+              protein fold.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static 'modeller_logo.png' %}" alt="Card image cap" height="400">
+    <div class="card-body">
+      <h5 class="card-title">DOPE Scoring</h5>
+      <p class="card-text">DOPE, or Discrete Optimized Protein Energy (Shen and
+        Sali, 2006), is a statistical potential used to assess homology models
+        in protein structure prediction. DOPE is based on an improved reference
+        state that corresponds to noninteracting atoms in a homogeneous sphere
+        with the radius dependent on a sample native structure; it thus accounts
+        for the finite and spherical shape of the native structures.</p>
+      <p class="card-text">This functionality requires no input data. Dope
+        scores are calculated using MODELLER9.24 and colours determined by a
+      matplotlib colourmap.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
