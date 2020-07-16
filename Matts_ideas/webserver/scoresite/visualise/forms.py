@@ -15,6 +15,6 @@ HDX_CHOICES = [
 
 class PDBForm(forms.Form):
     PDB = forms.CharField(label='PDB',max_length=4,required=False)
-    choice = forms.ChoiceField(label='Experimental Data Type',choices = CHOICES,required=False)
+    choice = forms.ChoiceField(label='Data Type',choices = CHOICES,required=False)
     hdx_opt = forms.ChoiceField(label='HDX Experiment (HDX Only)',choices=HDX_CHOICES,required=False)
     data = forms.FileField(label='Input Data',required=False)

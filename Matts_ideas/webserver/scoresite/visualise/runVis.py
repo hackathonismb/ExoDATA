@@ -59,10 +59,12 @@ class RepLabels(LoadModel):
 
         return mls
 
-    def output_statefile(self,data_label="",state_pref="./",state_suff="_state.txt",color="0FF",output_bool=True):
+    def output_statefile(self,data_label="",state_pref="./",state_suff="_state.txt",color="red",output_bool=True):
         lines = []
 
         lines.append(f"load mmdb {self.pdb_code}")
+
+        lines.append("color silver")
 
         for ml in self.labels:
             lines.append(f"select .{ml[1]}:{ml[0]}" )

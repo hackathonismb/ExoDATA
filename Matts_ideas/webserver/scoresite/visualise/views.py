@@ -11,6 +11,16 @@ d_obj = {
     "4":CustomRes
 }
 
+d_desc = {
+    "1":"Selected residues are shown in red as ball and stick representation.",
+    "2":{
+    "folding":"Green: Early, Yellow: Intermediate, Red: Late.",
+    "stability":"Green: Strong, Yellow: Medium, Red: Weak."
+    },
+    "3":"Lighter residues indicate better DOPE scoring regions.",
+    "4":"Color gradient from white to dark red indicates low -> high scoring."
+}
+
 # Create your views here.
 def index(request):
 
@@ -36,16 +46,23 @@ def index(request):
 
             context = {'state':"\n".join(obj.state)}
 
+            if input_data["choice"] == "2":
+                desc = d_desc["2"][input_data["hdx_opt"]]
+            else:
+                desc = d_desc[input_data["choice"]]
+
             try:
                 req = urllib.request.urlopen(url)
                 assert req.getcode()==200
                 req.close()
-                return render(request,"visualise/results.html",{'url':url})
+                return render(request,"visualise/results.html",{'url':url,'desc':desc})
             except:
                 filename = "%s_state.txt" % input_data['PDB']
                 content = "\n".join(obj.state)
-                response = HttpResponse(content, content_type='text/plain')
+                # response = HttpResponse(content, content_type='text/plain')
+                response = render(request,"visualise/results.html",{'url':'https://www.ncbi.nlm.nih.gov/Structure/icn3d/full.html','desc':desc})
                 response['Content-Disposition'] = 'attachment; filename={0}'.format(filename)
+                print(response)
                 return response
 
         return HttpResponse("Testing")
@@ -53,5 +70,5 @@ def index(request):
 def help(request):
     return render(request,"visualise/help.html")
 
-def results(request,context):
-    return render(request,"visualise/results.html",{'url':''})
+def results(request):
+    return render(request,"visualise/results.html",{'url':'https://www.ncbi.nlm.nih.gov/Structure/icn3d/full.html'})
