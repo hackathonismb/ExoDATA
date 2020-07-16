@@ -85,7 +85,9 @@ As of July 16, 2020 ten responses were received. The responses fell into two gen
 
 Structure modeling included the ability to see chemical and other properties for atoms and residues. These could be chemical modification, changes to pH, and other properties. Modeling visulaization included ways to understand model certaintity (uncertainty and data quality), volumetric data (hydradation, electron density), and "motions." Domain and side chain flexiblity and vibration modes are examples of modeling motion properties. Source of motion data indclude NMR (nuclear magnetic resonance), molecular dynamics, and simulations. 
 
-the second survey question asked for data source and provided four options: file, program output, dataabase, or website (server). The most common data source was a flat file. Files can get generated from programs or databases (> 50%). Other datasources were indicated as well and supporting these with an API (application programming interface) allows for direct integration with iCn3D. For example, because iCn3D can be implemented as a widget in a web page it is possibile for a genomic or structure database web site to directly integrate and visualize data on a structure within that site. 
+The second survey question asked for data source and provided four options: file, program output, dataabase, or website (server). The most common data source was a flat file. Files can get generated from programs or databases (> 50%). Other datasources were indicated as well and supporting these with an API (application programming interface) allows for direct integration with iCn3D. For example, because iCn3D can be implemented as a widget in a web page it is possibile for a genomic or structure database web site to directly integrate and visualize data on a structure within that site. 
+
+![Survey files](/survey.jpg)
 
 A large number of programs and specific resources were indicated. Genomics integration included GATK, VCF files, and dbSNP. Modeling programs included GROMACS, visual molecular dynamics (VMD), propka, and cpptraj.
 
