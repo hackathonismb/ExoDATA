@@ -15,9 +15,9 @@ The following examples illustrate some of the data of interest.
 CLMS uses a chemical modification to label residues which are on the protein surface, this information is usefulwhen modelling monomeric structures (Sinnott et al., 2020) as this can inform on which parts of a protein areexposed vs which are buried. It is also useful when looking at complexes especially for trying to define excludedareas which are liely to be interface regions (Schmidt et al., 2017).
 
 ### Data Structure
-aa1|c1
-aa2|c2
-aa3|c3
+aa1|c1  
+aa2|c2  
+aa3|c3  
 
 Data are structured as shown above in a text file, where aa indicates the residue id and c indicates the chain id foreach modified residue.
 
@@ -27,11 +27,9 @@ By measuring the rate of exchange of hydrogen and deuterium (using NMR or Mass S
 * Stability: On the other hand, the native exchange experiments investigate proteins in their folded orpartially folded states and report on the stability of existing hydrogen bonds to the amide protons basedon their resistance to solvent exchange. By varying the environmental conditions, like pH or denaturantconcentrations, such measurements can also provide quantitative information on the protection levelsof the individual amide protons in function of changes in the conformation of the protein. Comparingthese values can distinguish more stable from less stable regions of the protein fold
 
 ### Data Structure
-aa1; type1; marker1
-
-aa2; type2; marker2
-
-aa3; type3; marker3
+aa1; type1; marker1  
+aa2; type2; marker2  
+aa3; type3; marker3  
 
 Data are structured as above, aa indicates a residue identifier, type refers to the residue type. The marker is theindication of protection of that residue. For folding experiments this marker will be EARLY, INTERMEDIATEor LATE, for stability experiments this will be STRONG, MEDIUM or WEAK
 
