@@ -76,12 +76,16 @@ Area concepts: Surface displays, wire frames, water
 Chemical concepts: Display, colors ...
 
 ## ISMB Survey
-Goal: To learn what attendees would like to see, in terms, of visualizing data in the context of 3D structures. 
-Preamble: ISMB attendees we ned your help! We are participating in an iCn3D hackathon. One project is to enable viewing of external data such as chemical modifications, molecular dynamics, and quality information as annotations on 3D molecular structures. To better address community needs we ask that you take less than one minute to fill out our survey.
-Questions:
+To better understand the kinds of data that individuals might want to see in the context of a 3D structure, we conducted a survey at the 2020 annual international conference on Intelligent Systems for Molecular Biology (ISMB). Three questions were asked:
 1. What kind data would you like to see on a 3D structure?
 1. How do you work with the data in question one? (file, program output, database, website (server))
 1. What is the name of the program or resource in question 2?
+
+As of July 16, 2020 nine responses were received. The responses fell into two general categories: Genomics data integration and structure modeling. Genomics intergation focused on the ablity to see DNA and protrein (translated) sequence variation overlayed on structures. One individual sugested that it would be interesting to see coloring codes for the numbers of mutations at a site (hot spots) or the kinds of mutation (severity: benign, uncertain, pathogenic). Other kinds of genomic integration included the ability to visualize structures and their data in the context of reference genomes and (or) codons. 
+
+Structure modeling included the ability to see chemical and other properties for atoms and residues. These could be chemical modification, changes to pH, and other properties. Modeling visulaization included ways to understand model certaintity (uncertainty and data quality), volumetric data (hydradation, electron density), and "motions." Domain and side chain flexiblity and vibration modes are examples of modeling motion properties. Source of motion data indclude NMR (nuclear magnetic resonance), molecular dynamics, and simulations. 
+
+the second survey question asked for data source and provided four options: file, program output, dataabase, or website (server). The most common data source was a flat file. Files can get generated from programs or databases (> 50%). Other datasources were indicated as well and supporting these with an API (application programming interface) allows for direct integration with iCn3D. For example, because iCn3D can be implemented as a widget in a web page it is possibile for a genomic or structure database web site to directly integrate and visualize data on a structure within that site. 
 
 # References
 1. Schmidt, C., Macpherson, J.A., Lau, A.M., Tan, K.W., Fraternali, F., and Politis, A. (2017). Surface Accessibility and Dynamics of Macromolecular Assemblies Probed by Covalent Labeling Mass Spectrometry and Integrative Modeling. Anal. Chem. 89, 1459–1468.
