@@ -28,7 +28,9 @@ By measuring the rate of exchange of hydrogen and deuterium (using NMR or Mass S
 
 ### Data Structure
 aa1; type1; marker1
+
 aa2; type2; marker2
+
 aa3; type3; marker3
 
 Data are structured as above, aa indicates a residue identifier, type refers to the residue type. The marker is theindication of protection of that residue. For folding experiments this marker will be EARLY, INTERMEDIATEor LATE, for stability experiments this will be STRONG, MEDIUM or WEAK
